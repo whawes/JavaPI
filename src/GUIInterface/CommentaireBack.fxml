@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="GUIController.CommentaireBackController">
+   <children>
+      <Button fx:id="supprimer" layoutX="526.0" layoutY="188.0" mnemonicParsing="false" onAction="#supprimer" text="supprimer" />
+      <TableView fx:id="listecommentaire" layoutX="24.0" layoutY="157.0" onMouseClicked="#clickItem" prefHeight="200.0" prefWidth="494.0">
+         <columns>
+            <TableColumn fx:id="datecomm" prefWidth="131.0" text="date" />
+            <TableColumn fx:id="textecomm" prefWidth="275.0" text="Commentaire" />
+            <TableColumn fx:id="likescomm" prefWidth="87.0" text="likes" />
+         </columns>
+      </TableView>
+      <Button layoutX="514.0" layoutY="38.0" mnemonicParsing="false" onAction="#home" text="home" />
+      <Label fx:id="date" layoutX="57.0" layoutY="82.0" text="Label" />
+      <Label fx:id="description" layoutX="71.0" layoutY="116.0" text="Label">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="titre" layoutX="52.0" layoutY="24.0" prefHeight="38.0" prefWidth="230.0" text="Label">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
