@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ProjetPI.jnlp">
+  <information>
+    <title>ProjetPI</title>
+    <vendor>oucema</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ProjetPI.jar" size="18542649" download="eager" />
+    <jar href="lib\Medusa-11.3.jar" size="1517026" download="eager" />
+    <jar href="lib\bcrypt-0.9.0.jar" size="41104" download="eager" />
+    <jar href="lib\commons-logging-1.2-javadoc.jar" size="158448" download="eager" />
+    <jar href="lib\commons-logging-1.2.jar" size="61829" download="eager" />
+    <jar href="lib\fontbox-2.0.19.jar" size="1561265" download="eager" />
+    <jar href="lib\guava-23.0.jar" size="2614708" download="eager" />
+    <jar href="lib\jBCrypt-0.4.1.jar" size="17570" download="eager" />
+    <jar href="lib\jPDFViewer.v2019R1.08.jar" size="4544807" download="eager" />
+    <jar href="lib\java-mail-1.4.4.jar" size="494975" download="eager" />
+    <jar href="lib\jfoenix-8.0.8.jar" size="2708772" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.48.jar" size="1006956" download="eager" />
+    <jar href="lib\pdfbox-2.0.19.jar" size="2715618" download="eager" />
+    <jar href="lib\tilesfx-1.5.2.jar" size="1472287" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="ProjetPI" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="projetpi.ProjetPI"  name="ProjetPI" />
+  <update check="always"/>
+</jnlp>

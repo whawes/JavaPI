@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="1007.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUIController.StartController">
+    <children>
+        <Pane layoutX="80.0" prefHeight="560.0" prefWidth="68.0">
+            <children>
+                <JFXButton fx:id="courseBtn" layoutY="14.0" prefHeight="170.0" prefWidth="65.0" text="Course" onAction="#CourseAction"  />
+                <JFXButton fx:id="testBtn" layoutX="7.0" layoutY="204.0" prefHeight="170.0" prefWidth="51.0" text="Test" onAction="#testAction" />
+                <JFXButton fx:id="quizBtn" layoutX="5.0" layoutY="380.0" prefHeight="180.0" prefWidth="51.0" text="Quiz" onAction="#ExerciceAction" />
+
+            </children>
+        </Pane>
+        <Pane fx:id="back" layoutX="144.0" prefHeight="560.0" prefWidth="863.0" />
+        <AnchorPane prefHeight="548.0" prefWidth="80.0">
+            <children>
+                <Pane prefHeight="80.0" prefWidth="80.0" styleClass="home" stylesheets="@../CSS/Style.css" />
+                <Pane layoutY="80.0" prefHeight="80.0" prefWidth="80.0" styleClass="espaceA" stylesheets="@../CSS/Style.css" />
+                <Pane layoutY="160.0" prefHeight="80.0" prefWidth="80.0" styleClass="espaceB" stylesheets="@../CSS/Style.css" />
+                <Pane layoutY="240.0" prefHeight="80.0" prefWidth="80.0" styleClass="espaceC" stylesheets="@../CSS/Style.css" />
+                <Pane layoutY="320.0" prefHeight="80.0" prefWidth="80.0" styleClass="espaceD" stylesheets="@../CSS/Style.css" />
+                <Pane layoutY="400.0" prefHeight="80.0" prefWidth="80.0" styleClass="espaceE" stylesheets="@../CSS/Style.css" />
+                <Pane layoutY="480.0" prefHeight="80.0" prefWidth="80.0" styleClass="espaceF" stylesheets="@../CSS/Style.css">
+                     <children>
+                        <JFXButton fx:id="bbnxt" layoutX="-11.0" layoutY="16.0" onAction="#EdTech" prefHeight="48.0" prefWidth="103.0" text="EdTech">
+                            <font>
+                                <Font name="Century Gothic Bold" size="22.0" />
+                            </font>
+                        </JFXButton>
+                    </children>
+                </Pane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
