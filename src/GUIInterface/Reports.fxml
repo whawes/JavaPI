@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUIController.ReportsController">
+   <children>
+      <TableView fx:id="listereport" layoutX="33.0" layoutY="75.0" onMouseClicked="#clickItem" prefHeight="302.0" prefWidth="441.0">
+        <columns>
+          <TableColumn fx:id="type" prefWidth="158.0" text="type" />
+          <TableColumn fx:id="nombre" prefWidth="88.0" text="nombre" />
+            <TableColumn fx:id="sujet_id" prefWidth="100.0" text="Sujet" />
+            <TableColumn fx:id="commentaire_id" prefWidth="94.0" text="commentaire" />
+        </columns>
+      </TableView>
+      <Button fx:id="accept" layoutX="505.0" layoutY="120.0" mnemonicParsing="false" onAction="#accept" text="accept" />
+      <Button layoutX="55.0" layoutY="29.0" mnemonicParsing="false" onAction="#home" text="home" />
+      <Button fx:id="decline" layoutX="505.0" layoutY="175.0" mnemonicParsing="false" onAction="#decline" text="decline" />
+   </children>
+</AnchorPane>

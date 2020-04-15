@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<<<<<<< HEAD
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
@@ -36,4 +37,18 @@
             </children>
         </AnchorPane>
     </children>
+=======
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="GUIController.StartController">
+   <children>
+      <Button layoutX="90.0" layoutY="161.0" mnemonicParsing="false" onAction="#forum" text="Forum" />
+   </children>
+>>>>>>> 23d3e7d39267ab14e477be4614efd134274014e5
 </AnchorPane>

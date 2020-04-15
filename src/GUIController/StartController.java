@@ -13,9 +13,13 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
+<<<<<<< HEAD
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
+=======
+import javafx.scene.Scene;
+>>>>>>> 23d3e7d39267ab14e477be4614efd134274014e5
 import javafx.stage.Stage;
 
 /**
@@ -25,16 +29,20 @@ import javafx.stage.Stage;
  */
 public class StartController implements Initializable {
 
+<<<<<<< HEAD
     @FXML
     private Pane back;
     @FXML
     private Pane back1;
 
+=======
+>>>>>>> 23d3e7d39267ab14e477be4614efd134274014e5
     /**
      * Initializes the controller class.
      */
     @FXML
     void forum(ActionEvent event) throws IOException {
+<<<<<<< HEAD
         /*   FXMLLoader fxmlLoader = new FXMLLoader();
          fxmlLoader.setLocation(getClass().getResource("/GUIInterface/Forum.fxml"));
          Scene scene = new Scene(fxmlLoader.load());
@@ -101,11 +109,26 @@ public class StartController implements Initializable {
             ex.getMessage();
             ex.printStackTrace();
         }
+=======
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        fxmlLoader.setLocation(getClass().getResource("/GUIInterface/Forum.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = new Stage();
+        stage.setTitle("New Window");
+        stage.setScene(scene);
+        stage.show();
+        ((Node) (event.getSource())).getScene().getWindow().hide();
+
+>>>>>>> 23d3e7d39267ab14e477be4614efd134274014e5
     }
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+<<<<<<< HEAD
         affichage("/GUIInterface/EdTech/CourseView.fxml");
+=======
+        // TODO
+>>>>>>> 23d3e7d39267ab14e477be4614efd134274014e5
     }
 
 }

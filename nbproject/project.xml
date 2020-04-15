@@ -13,7 +13,11 @@
             </extension>
         </buildExtensions>
         <data xmlns="http://www.netbeans.org/ns/j2se-project/3">
+<<<<<<< HEAD
             <name>ProjetPI</name>
+=======
+            <name>Projet</name>
+>>>>>>> 23d3e7d39267ab14e477be4614efd134274014e5
             <source-roots>
                 <root id="src.dir"/>
             </source-roots>

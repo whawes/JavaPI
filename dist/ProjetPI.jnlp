@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="ProjetPI.jar" size="18567691" download="eager" />
+    <jar href="ProjetPI.jar" size="18567754" download="eager" />
     <jar href="lib\Medusa-11.3.jar" size="1517026" download="eager" />
     <jar href="lib\bcrypt-0.9.0.jar" size="41104" download="eager" />
     <jar href="lib\commons-logging-1.2-javadoc.jar" size="158448" download="eager" />

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUIController.ForumController">
+   <children>
+      <Button layoutX="460.0" layoutY="30.0" mnemonicParsing="false" onAction="#addSujet" text="new" />
+      <TableView fx:id="listesujet" focusTraversable="false" layoutX="22.0" layoutY="100.0" onMouseClicked="#clickItem" prefHeight="200.0" prefWidth="553.0">
+        <columns>
+            <TableColumn fx:id="titre" prefWidth="63.0" text="titre" />
+            <TableColumn fx:id="date" prefWidth="88.0" text="date" />
+            <TableColumn fx:id="description" prefWidth="290.0" text="description" />
+            <TableColumn fx:id="score" prefWidth="60.0" text="score" />
+            <TableColumn fx:id="vues" prefWidth="51.0" text="vues" />
+        </columns>
+      </TableView>
+      <Button layoutX="520.0" layoutY="30.0" mnemonicParsing="false" onAction="#mine" text="mine" />
+      <Button layoutX="38.0" layoutY="30.0" mnemonicParsing="false" onAction="#home" text="home" />
+      <Button fx:id="supprimer" layoutX="171.0" layoutY="336.0" mnemonicParsing="false" onAction="#supprimer" text="supprimer" />
+      <Button fx:id="modifier" layoutX="78.0" layoutY="336.0" mnemonicParsing="false" onAction="#modifSujet" text="modifier" />
+      <Button fx:id="comment" layoutX="274.0" layoutY="336.0" mnemonicParsing="false" onAction="#comment" text="comm" />
+      <Button fx:id="like" layoutX="352.0" layoutY="336.0" mnemonicParsing="false" onAction="#like" text="like" />
+      <Button fx:id="report" layoutX="427.0" layoutY="336.0" mnemonicParsing="false" onAction="#report" text="report" />
+      <TextField fx:id="recherche" layoutX="200.0" layoutY="30.0" onKeyReleased="#rechercher" promptText="recherche" />
+   </children>
+</AnchorPane>

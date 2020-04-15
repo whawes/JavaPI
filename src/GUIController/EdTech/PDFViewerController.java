@@ -40,7 +40,6 @@ public class PDFViewerController implements Initializable {
     private String file;
     @FXML
     private Button exBtn;
-    
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -58,17 +57,27 @@ public class PDFViewerController implements Initializable {
     }
 
     @FXML
-    public void exBtnHandle(ActionEvent event) throws IOException {
+    void exBtnAction(ActionEvent event) throws IOException {
         //System.setProperty("type", String.valueOf(test.getTypeIntelligence()));
-        
+        /*Stage stage = (Stage) mediaview.getScene().getWindow();
+         stage.close();
+         Stage primaryStage = new Stage();
+         // primaryStage.close();
+
+         BorderPane root = FXMLLoader.load(getClass().getResource("/GUIInterface/EdTech/Exercice/ExerciceParCoursFront.fxml"));
+         primaryStage.setTitle("Interface de cours");
+         primaryStage.setScene(new Scene(root));
+         */
+        System.setProperty("type", String.valueOf(2));
         Stage stage = (Stage) exBtn.getScene().getWindow();
         stage.close();
         Stage primaryStage = new Stage();
         primaryStage.close();
 
         BorderPane root = FXMLLoader.load(getClass().getResource("/GUIInterface/EdTech/Exercice/ExerciceParCoursFront.fxml"));
-        primaryStage.setTitle("Exercice");
+        primaryStage.setTitle("Interface de cours");
         primaryStage.setScene(new Scene(root));
+        primaryStage.show();
 
     }
 }

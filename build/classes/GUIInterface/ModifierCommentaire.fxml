@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUIController.ModifierCommentaireController">
+   <children>
+      <Button layoutX="363.0" layoutY="297.0" mnemonicParsing="false" onAction="#modifier" text="oki" />
+      <TextArea fx:id="text" layoutX="99.0" layoutY="79.0" prefHeight="200.0" prefWidth="429.0" />
+      <Button layoutX="263.0" layoutY="297.0" mnemonicParsing="false" onAction="#cancel" text="cancel" />
+   </children>
+</AnchorPane>

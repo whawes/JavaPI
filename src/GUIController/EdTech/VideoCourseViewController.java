@@ -76,6 +76,16 @@ public class VideoCourseViewController implements Initializable {
     @FXML
     void exBtnAction(ActionEvent event) throws IOException {
         //System.setProperty("type", String.valueOf(test.getTypeIntelligence()));
+        /*Stage stage = (Stage) mediaview.getScene().getWindow();
+         stage.close();
+         Stage primaryStage = new Stage();
+         // primaryStage.close();
+
+         BorderPane root = FXMLLoader.load(getClass().getResource("/GUIInterface/EdTech/Exercice/ExerciceParCoursFront.fxml"));
+         primaryStage.setTitle("Interface de cours");
+         primaryStage.setScene(new Scene(root));
+         */
+        System.setProperty("type", String.valueOf(2));
         Stage stage = (Stage) mediaview.getScene().getWindow();
         stage.close();
         Stage primaryStage = new Stage();
@@ -84,6 +94,7 @@ public class VideoCourseViewController implements Initializable {
         BorderPane root = FXMLLoader.load(getClass().getResource("/GUIInterface/EdTech/Exercice/ExerciceParCoursFront.fxml"));
         primaryStage.setTitle("Interface de cours");
         primaryStage.setScene(new Scene(root));
+        primaryStage.show();
 
     }
 }
